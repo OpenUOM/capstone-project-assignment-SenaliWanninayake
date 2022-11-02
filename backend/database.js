@@ -1,4 +1,3 @@
-
 const dbConnection = require("./sqlite");
 
 dbConnection
