@@ -1,4 +1,3 @@
-
 const dbConnection = require("./sqlite");
 
 dbConnection
@@ -24,7 +23,7 @@ const dbinitialize = async () => {
 }
 
 const readTeachers = async () => {
-    const sql = SELECT * FROM teacher
+    const sql = SELECT * FROMteacher
     return new Promise((resolve, reject) => {
         knex_db
             .raw(sql)
@@ -94,7 +93,7 @@ const deleteTeacher = async (id) => {
 }
 
 const readStudents = async () => {
-    const sql = SELECT * FROM student
+    const sql = SELECT * FROMstudent
     return new Promise((resolve, reject) => {
         knex_db
             .raw(sql)
@@ -162,6 +161,7 @@ const deleteStudent = async (id) => {
             });
     });
 }
+
 
 module.exports = {
     readTeachers,
